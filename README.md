@@ -48,16 +48,20 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 
 **PROGRAM**
 
-```verilog
-module DFLIPFLOPNEGEDGE(D,Clock,reset,Q);
-input D,reset,Clock;
+```
+module exp8(D,clk,Q,Qbar);
+input D,clk;
 output reg Q;
-always @ (negedge Clock)
-if(!reset)
-Q <= 0;
-else
-Q <= D;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin 
+Q=D;
+Qbar=~D;
+end
 endmodule
+
 ```
 
 **RTL LOGIC FOR FLIPFLOPS**
