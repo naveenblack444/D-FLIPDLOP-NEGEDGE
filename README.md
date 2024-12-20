@@ -1,5 +1,7 @@
-# Developed by : Naveen R
-# Reg no : 24900811
+**Developed by : Naveen R**
+
+**Reg no : 24900811**
+
 # D-FLIPDLOP-NEGEDGE
 
 **AIM:**
