@@ -51,7 +51,7 @@ Next state of D flip-flop is always equal to data input, D for every positive tr
 **PROGRAM**
 
 ```
-module exp8(D,clk,Q,Qbar);
+module expt8(D,clk,Q,Qbar);
 input D,clk;
 output reg Q;
 output reg Qbar;
